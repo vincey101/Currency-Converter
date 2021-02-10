@@ -35,7 +35,6 @@ document
   })
 
 
-
 const API_publicKey = "FLWPUBK_TEST-4b2a7dd33eca3038d58cfd6b750a8cf5-X";
 
 function payWithRave() {

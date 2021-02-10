@@ -16,41 +16,37 @@
         </div>
         <form action="" id="converter">
             <div class="email">
-                <p> Email : </p>
+                <p> Email: </p>
                 <input class="mailform" name='email' type="email" required />
+                <span class='amount'>
+                    <p> Input amount (in USD):</p>
+                    <input class="inputform" type="number" min="0" name="amount">
+                    <p>From USD :
+                        <select name="from">
+                            <option value="USD">USD</option>
+                        </select>
+                    </p>
+                    <p>
+                        Payment currency:
+                        <select name="to">
+                            <option value="NGN" selected>NGN</option>
+                            <option value="KES">KES</option>
+                            <option value="GHS">GHS</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                            <option value="USD">USD</option>
+                        </select>
+                    </p>
+                    </Input>
+                    <input type="submit" value="Convert" style="font-size: 20px" />
+                    <p>Total amount to pay in your currency is:</p>
+                    <p id="output"> </p>
+                    <p id="message"></p>
+                </span>
             </div>
-            <div class='amount'>
-                <p> Input amount (in USD):</p>
-                <input class="inputform" type="number" min="0" name="amount">
-
-                <p>From USD:
-                    <select name="from">
-                        <option value="USD">USD</option>
-                    </select>
-                </p>
-                <p>
-                    Payment currency:
-                    <select name="to">
-                        <option value="NGN" selected>NGN</option>
-                        <option value="KES">KES</option>
-                        <option value="GHS">GHS</option>
-                        <option value="EUR">EUR</option>
-                        <option value="GBP">GBP</option>
-                        <option value="USD">USD</option>
-                    </select>
-                </p>
-                </Input>
-                <input type="submit" value="Convert" style="font-size: 20px">
-                <p>Total amount to pay in your currency is:</p>
-                <p id="output"> </p>
-                <div id="message">
-
-                </div>
-                <div class="button">
-                    <form>
-                        <button style="font-size: 17px" type="button" onClick="payWithRave()">Pay Now</button>
-                    </form>
-                </div>
+            <form>
+                <button style="font-size: 17px" type="button" onClick="payWithRave()">PayNow</button>
+            </form>
         </form>
     </div>
 </body>
